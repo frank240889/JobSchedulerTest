@@ -17,7 +17,7 @@ import android.os.PersistableBundle;
 public class Job {
     /**
      * Here we schedule our task and constraints to execute when are met,
-     * in this case certain time period.
+     * in this case a periodic task.
      * @param context
      */
     public static void scheduleJob(Context context, int duration){
@@ -48,7 +48,7 @@ public class Job {
         builder.setOverrideDeadline(duration);
 
         //now that our builder object has the parameters set
-        //is time to execute.
+        //is time to schedule.
         //NOTE: Remember to pass application context with getApplicationContext() instead of Activity context to avoid memory leaks!!!!!!!!!!
         JobScheduler jobScheduler = (JobScheduler) context.getApplicationContext().getSystemService(Context.JOB_SCHEDULER_SERVICE);
         jobScheduler.schedule(builder.build());
