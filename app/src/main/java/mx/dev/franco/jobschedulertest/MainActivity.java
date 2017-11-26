@@ -134,7 +134,8 @@ public class MainActivity extends AppCompatActivity {
             //get the next execution delay
             int duration = intent.getIntExtra(DURATION, 0);
             String msg = getString(R.string.info) + " " + duration + " " + getString(R.string.seconds);
-            //We can modify its TextView value
+            //Here we can modify its TextView value,
+            //adapt to your logic
             mTextView.setText(msg);
 
         }
