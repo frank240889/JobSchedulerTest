@@ -89,6 +89,8 @@ public class PeriodicTaskService extends JobService {
         intent.putExtra(MainActivity.Constants.DURATION, newSchedulingTime);
         LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
 
+        //Re schedule our task with new delay that it takes
+        //to execute
         Job.scheduleJob(this, newSchedulingTime);
     }
 
