@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JobSchedulerTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="info">Next execution of method after:</string>
+    <string name="stop_previous">Your previous yourMethod has finished its execution.</string>
+    <string name="cancel_jobs">All executions cancelled.</string>
+    <string name="seconds">milliseconds.</string>
+    <string name="starting_execution">Executing yourMethod for first time!!!</string>
+    <string name="start_message">Press FAB button to start executing your method.</string>
+</resources>
