@@ -124,8 +124,8 @@ public class MainActivity extends AppCompatActivity {
      * This class handles our responses coming from PeriodicTaskService,
      * in this way we are decoupling components that should not or can not not modify UI
      * directly.
-     * Is good practice decouple components that only runs code without
-     * UI from components that have UI.
+     * Is good practice decouple components that only runs outside UI Thread
+     * from components that runs on UI.
      */
     public class PeriodicTaskResponseReceiver extends BroadcastReceiver {
 
