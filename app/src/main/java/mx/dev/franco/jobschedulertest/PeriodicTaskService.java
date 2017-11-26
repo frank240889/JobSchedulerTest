@@ -42,7 +42,12 @@ public class PeriodicTaskService extends JobService {
     private void yourMethod(JobParameters params) {
         Log.d(TAG,"yourMethod is executing");
 
-        // TODO: 25/11/17
+        // TODO: Put the code that you want to execute
+
+        /**
+         * Your code
+         */
+
 
         //retrieve duration and depending of previous time
         //set, establish new delay to execute your next method.
