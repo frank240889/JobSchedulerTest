@@ -37,16 +37,6 @@ public class Job {
         extraInfo.putInt(MainActivity.Constants.DURATION,duration);
         builder.setExtras(extraInfo);
 
-        //minimum latency means the min limit in milliseconds JobScheduler has to wait to execute the code
-        builder.setMinimumLatency(duration);
-        //setOverrideDeadline means the max limit in milliseconds in which your code is
-        //going to execute. Using setMinimumLatency with setOverrideDeadline together,
-        //make something like minimum and maximum limit to execute the code, its useful
-        //because setPeriodic time for Nougat are 15 minutes, so less than this time
-        //is not going to work.
-        //For android <= M there is no problem in use setPeriodic (instead of two before), with less than 15 minutes
-        builder.setOverrideDeadline(duration);
-
         //Using setMinimumLatency with setOverrideDeadline together,
         //it makes something like minimum and maximum limit to execute the code, is useful
         //because minimum time for setPeriodic in Nougat are 15 minutes, so if you require
