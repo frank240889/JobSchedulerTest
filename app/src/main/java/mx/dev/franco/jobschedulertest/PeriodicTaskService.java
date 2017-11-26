@@ -11,7 +11,10 @@ import android.util.Log;
 import android.widget.Toast;
 
 /**
- * Created by franco on 6/07/17.
+ * Created by franco on 25/11/17.
+ * NOTE: Remember that this is class extends from Service and all code runs on UI Thread.
+ * so if you run intensive task make sure to run in their own Thread for avoiding
+ * block UI Thread and making unresponsive
  */
 
 public class PeriodicTaskService extends JobService {
